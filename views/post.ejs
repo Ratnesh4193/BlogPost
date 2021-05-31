@@ -1,0 +1,16 @@
+<%- include('./partials/header'); %>
+
+
+<div class="card mt-5">
+  <div class="card-header">
+      <%=post.title %>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <%=post.body %>
+      <footer class="blockquote-footer"><cite>Anonymous User</cite></footer>
+    </blockquote>
+  </div>
+</div>
+
+<%- include('./partials/footer'); %>
