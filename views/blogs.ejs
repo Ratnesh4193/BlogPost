@@ -1,9 +1,6 @@
 <%- include('partials/header', {userName: userName}) %>
-<%=console.log(userName)%>
-<h1>Home</h1>
 
 
-<%= homeStartingContent %>
 <p></p>
 <% posts.forEach(function(post){ %>
 
@@ -12,7 +9,9 @@
 </h2></p>
 <p>
     <%=post.content.substring(0, 100)+"..." %>
+    <% if (post.title!=""){ %>
 <a href="/posts/<%=post._id%>" >Read More</a>
+<% } %>
 </p>
 
 <%  }) %>
